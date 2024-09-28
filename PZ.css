@@ -1,0 +1,245 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+  text-size-adjust: 100%;
+}
+h2,
+h3 {
+  color: yellow;
+}
+
+p {
+  color: #ccc;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: #111;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+/* Make the video container cover the whole section */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Ensure the video covers the entire area */
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Section */
+/* Main container styling */
+#about {
+  padding: 50px;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+/* Content wrapper to structure text and images */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Text section styles */
+.text-section {
+  flex: 2; /* Give more space to the text section */
+  padding: 20px;
+}
+
+#about h2,
+#about h3 {
+  color: yellow; /* Gold color for headings */
+}
+
+#about p,
+#about ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Image section styling */
+.image-section {
+  flex: 1; /* Make the image section smaller */
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  height: 100%; /* Adjusted to take up full height */
+  max-height: 500px; /* Limit image height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section img {
+    height: auto;
+  }
+}
+
+/* Performance Section */
+#performance {
+  min-height: 100vh; /* Ensures the section covers the full page height */
+  background: url("https://www.peshawarzalmi.com/frontend/assets/img/about.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flexbox; /* Enable flexbox */
+  justify-content: flex-end; /* Horizontally center */
+  align-items: top; /* Vertically center */
+  text-align: center; /* Center text inside elements */
+  padding: 0;
+}
+
+table {
+  align-items: top;
+  width: 100%; /* Reduce width for better centering */
+  border-collapse: separate;
+  margin: auto; /* Centers the table */
+  font-size: 1.5em; /* Increase text size */
+}
+
+th,
+td {
+  padding: 5px; /* Increase padding for bigger content */
+}
+
+th {
+  background-color: #333;
+  font-size: 1.8em; /* Increase header text size */
+}
+
+td {
+  font-size: 1.5em; /* Increase table cell text size */
+}
+
+/* Players Section */
+#players {
+  padding: 50px;
+  background-color: #111;
+}
+
+.player-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.player-card {
+  background-color: #222;
+  padding: 20px;
+  border: 1px solid yellow;
+  width: 45%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 500px;
+  height: 500px;
+  border-radius: 70%;
+  margin-bottom: 10px;
+}
+#contact {
+  min-height: 100vh; /* Ensures the section covers the full page height */
+  background: url("https://www.peshawarzalmi.com/frontend/assets/img/IMG_9381.JPG")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex; /* Correct use of Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  padding: 0;
+  flex-direction: column; /* Stack elements vertically */
+  text-size-adjust: 100px;
+}
+
+/* Centering the button */
+button {
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Additional styling for layout */
+main {
+  text-align: center;
+  padding: 60px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
